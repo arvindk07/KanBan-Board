@@ -1,0 +1,36 @@
+.cardBoard {
+  gap: 20px;
+  height: 100%;
+  display: flex;
+  max-height: 100%;
+  min-width: 290px;
+  flex-direction: column;
+
+  .boardTop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .boardCards {
+    flex: 1;
+    gap: 10px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    overflow-y: auto;
+    border-bottom: 10px;
+    background: #f8f8f8;
+    flex-direction: column;
+
+    .boardCardAdd {
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+      &:hover {
+        box-shadow: 0 7px 14px rgba(0, 0, 0, 0.15),
+          0 5px 5px rgba(0, 0, 0, 0.11);
+      }
+    }
+  }
+}

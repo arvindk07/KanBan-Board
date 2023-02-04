@@ -1,0 +1,48 @@
+.customCard {
+  gap: 10;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: #ffffff;
+
+  .cardTop {
+    gap: 5px;
+    display: flex;
+
+    svg {
+      opacity: 0;
+      transition: 200ms;
+    }
+
+    &:hover svg {
+      opacity: 1;
+    }
+
+    .cardCustomLabels {
+      flex: 1;
+      gap: 10px;
+      display: flex;
+    }
+  }
+  .cartTitle {
+    font-weight: bold;
+  }
+
+  .cartFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      gap: 5px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        height: 14px;
+        width: 1ppx;
+      }
+    }
+  }
+}

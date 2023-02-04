@@ -1,0 +1,54 @@
+.edittabel {
+  width: 100%;
+
+  .edittabelDisplay {
+    padding: 10px;
+    cursor: default;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #f8f8f8;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+
+  .edittableEdit {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      outline: none;
+      font-size: 1rem;
+      padding: 6px 10px;
+      border-radius: 3px;
+      border: 1px solid #3669f7;
+    }
+
+    .editableEditFooter {
+      gap: 10px;
+      display: flex;
+      align-items: center;
+
+      button {
+        border: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        transition: 200ms;
+        padding: 8px 16px;
+        border-radius: 4px;
+        background: #1379ec;
+
+        &:hover {
+          background: #0457b6;
+        }
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+}
